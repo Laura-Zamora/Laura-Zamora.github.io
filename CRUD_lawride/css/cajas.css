@@ -1,0 +1,111 @@
+
+*{
+
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+
+}
+
+body{
+
+  background-image:url(../img/fondo2.jpg);
+  background-position: center 0px ;                    /* centrado en x y en y posicion 0 */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.caja{
+  justify-content: space-between;
+  display:inline-block;
+  width: 300px;
+  height: 300px;
+  background: #2C2C47;
+  font-weight: bold;                                   /* especifica el grueso de la letra (bold= negrita)*/
+  color: #000000;
+  text-align: center;
+  font-size: 25px;
+
+
+}
+
+.contenedor{
+
+
+  justify-content: space-between;                     /*define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor. (space-between= El primer item al inicio, el último al final)*/
+  align-items: center;
+
+  transition: all 0.4s linear;
+
+}
+
+button{
+
+  width: 250px;
+ margin-left: 65px;
+  background: transparent;
+  border: 4px solid ;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+
+}
+
+
+button:hover{
+  font-size: 120%
+}
+
+
+i{
+ display:inline-block;
+ margin: 40px;
+}
+
+p{
+  color:black;
+  font-weight: bold;
+}
+
+
+
+
+.btn{
+  display: inline-block;
+  text-align: center;
+  margin-top: 70px;
+  align-content: center;
+  width: 80px;
+  margin-left: 1200px;
+  background: none;
+  border: 1px solid #4fb560;
+  color:#4fb560;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background: #4fb560;
+  color: #fff;
+}
+
+/*
+.caja:hover{
+
+}
+*/
+
+h1{
+  text-transform: uppercase;
+  font-size: 60px;                                      /* tamaño del texto  */
+  color:black;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 90px;
+
+}
