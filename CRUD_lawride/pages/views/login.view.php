@@ -37,7 +37,7 @@
           <?php endif; ?>
 
           <div class="botn">
-            <a href="../index.html">Regresar</a>
+            <a href="funcionesadm.php">Regresar</a>
           </div>
           </form>
        </fieldset>
