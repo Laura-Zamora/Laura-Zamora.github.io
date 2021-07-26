@@ -11,7 +11,7 @@ $situacion_juridica='';
 $ultima_actualizacion='';
 $pendientes='';
 $nom_abogado='';
-$numd_abogado='';
+$num_documento='';
 
 
 if  (isset($_GET['cod_caso'])) {
@@ -53,14 +53,14 @@ if (isset($_POST['actualizar'])) {
   $ultima_actualizacion=$_POST['ultima_actualizacion'];
   $pendientes=$_POST['pendientes'];
   $numd_abogado=$_POST['numd_abogado'];
-  $nom_abogado=$_POST['nom_abogado'];
+  $num_documento=$_GET['nom_abogado'];
 
 
 
-  $SQL = $conn->query("actualizar abogados,casos set estado_caso = '$estado_caso', identificacion_cliente= '$identificacion_cliente',
+  $SQL = $conn->query("update abogados,casos set estado_caso = '$estado_caso', identificacion_cliente= '$identificacion_cliente',
  nombre_cliente = '$nombre_cliente', telefono_cliente = '$telefono_cliente',email_cliente = '$email_cliente', situacion_juridica = '$situacion_juridica',
-ultima_actualizacion = '$ultima_actualizacion', pendientes = '$pendientes', numd_abogado = '$numd_abogado', nom_abogado = '$nom_abogado'
-   WHERE cod_caso=$numd_abogadcod_caso");
+ultima_actualizacion = '$ultima_actualizacion', pendientes = '$pendientes', numd_abogado = '$num_documento', nom_abogado = '$nom_abogado'
+   WHERE cod_caso=$cod_caso");
 
 
   header('Location: modificar_caso.php');
@@ -124,7 +124,7 @@ ultima_actualizacion = '$ultima_actualizacion', pendientes = '$pendientes', numd
         </div>
 
        <div class="form-group">
-       <i class= "icono izquierda fa fa-credit-card"></i><input type="text" name="numd_abogado"  value="<?php echo $numd_abogado; ?>"class="usuario" placeholder="Documento abogado" value="">
+       <i class= "icono izquierda fa fa-credit-card"></i><input type="text" name="numd_abogado"  value="<?php echo $num_documento; ?>"class="usuario" placeholder="Documento abogado" value="">
        </div>
 
 

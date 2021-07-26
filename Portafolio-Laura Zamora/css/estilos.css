@@ -15,6 +15,13 @@ a{
     text-decoration: none;
 }
 
+.descripcion .envideo{
+    text-decoration: dashed;
+    font-size: 14px;
+    color:#636363;
+
+}
+
 .contenedor{
     width: 90%; 
     max-width: 1000px;
@@ -294,6 +301,19 @@ footer .redes-sociales .youtube:hover{background: #cd201f;}
 footer .redes-sociales .github:hover{background: #666666;}
 footer .redes-sociales .instagram:hover{background: #3f729b;}
 
+/*
+.vidfun{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+*/
+
+.vidfun .vdo{
+    display: flex;
+    margin: 5% auto;
+    align-items: center;
+}
 
 @media screen and (max-width:800px){
     header .menu{

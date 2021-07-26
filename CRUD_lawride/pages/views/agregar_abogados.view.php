@@ -87,7 +87,7 @@ if(isset($_POST['Enviar'])){
   $exec=$resultado->execute(array(":numd_abogado"=>$documento,":nom_abogado"=>$nombre,":ape_abogado"=>$apelldio,":genero_abogado"=>$genero,":tel_abogado"=>$telefono,":direccion_abogado"=>$direccion,":email_abogado"=>$email,"clave_abogado"=>$clave));
   if($exec){
     echo'<script language="javascript">alert("Datos Registrados");</script>';
-    echo "Datos registrador".$e->getMessage();
+    echo "Datos registrador".$e->getMessage();;
     header("Refresh:0; url=modificar_abogados.php");
   }else{
     echo '<script language="javascript">alert("Error al registrar la informacion");</script>';

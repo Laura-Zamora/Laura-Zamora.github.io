@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['numd_abogado'])){
+if(isset($_GET['numd_abogado'])){
 
 require_once("conexion.php");
 if(isset($_GET['numd_abogado'])) {

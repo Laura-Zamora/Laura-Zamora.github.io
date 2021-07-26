@@ -8,15 +8,15 @@
 <body>
 
   <div class="w3-container">
-    <h2>REGISTRO ABOGADOS</h2>
+    <h2>REGISTRO CASOS</h2>
 
        <table class="w3-table-all w3-hoverable">
 
         <thead>
           <tr class="w3-light-grey">
             <th>ESTADO</th>
-            <th>CODIGO CASO</th>
-            <th>DCUMENTO CLIENTE</th>
+            <th>CODIGO</th>
+            <th>DC CLIENTE</th>
             <th>NOMBRE CLIENTE</th>
 						<th>TELEFONO CLIENTE </th>
 						<th>EMAIL CLIENTE</th>

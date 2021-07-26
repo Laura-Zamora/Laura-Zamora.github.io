@@ -10,7 +10,7 @@ require_once('conexion.php');
 @$situacion_juridica =$_POST['situacion_juridica'];
 @$ultima_actualizacion =$_POST['ultima_actualizacion'];
 @$pendientes =$_POST['pendientes'];
-@$numd_abogado =$_POST['numd_abogado'];
+@$num_documento =$_GET['numd_abogado'];
 
 ?>
 
@@ -101,11 +101,11 @@ if (isset($_POST['Enviar'])) {
   $resultado=$conn->prepare($SQL);
   $exec=$resultado->execute(array(":estado_caso"=>$estado_caso,":identificacion_cliente"=>$identificacion_cliente,
  ":nombre_cliente"=>$nombre_cliente,":telefono_cliente"=>$telefono_cliente,":email_cliente"=>$email_cliente,":situacion_juridica"=>$situacion_juridica,
-  ":ultima_actualizacion"=>$ultima_actualizacion,":pendientes"=>$pendientes,":numd_abogado"=>$numd_abogado));
+  ":ultima_actualizacion"=>$ultima_actualizacion,":pendientes"=>$pendientes,":numd_abogado"=>$num_documento));
   if($exec){
     echo'<script language="javascript">alert("Datos Registrados");</script>';
 
-    header("Refresh:0; url=modificar_abogados.php");
+    header("Refresh:0; url=modificar_caso.php");
   }else{
     echo '<script language="javascript">alert("Error al registrar la informacion");</script>';
      }
