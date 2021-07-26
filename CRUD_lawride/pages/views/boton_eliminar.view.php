@@ -1,10 +1,10 @@
 <?php
-if(isset($_POST['numd_abogado'])){
+if(isset($_GET['numd_abogado'])){
 
 require_once("conexion.php");
 if(isset($_GET['numd_abogado'])) {
   $numd_abogado = $_GET['numd_abogado'];
-  $SQL = $conn->query("DELETE FROM abogados WHERE numd_abogado = $numd_abogado");
+  $SQL = $conn->query("DELETE  FROM abogados WHERE numd_abogado = $numd_abogado");
  
 
   if($SQL==true) {

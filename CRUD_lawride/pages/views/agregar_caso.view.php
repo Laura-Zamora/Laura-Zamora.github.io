@@ -45,7 +45,7 @@ require_once('conexion.php');
            </div>
 
            <div class="form-group">
-           <i class= "icono izquierda fa fa-credit-card"></i><input type="text" name="identificacion_cliente" class="usuario" placeholder="docmento cliente" value="">
+           <i class= "icono izquierda fa fa-credit-card"></i><input type="text" name="identificacion_cliente" class="usuario" placeholder="documento cliente" value="">
            </div>
 
            <div class="form-group">
@@ -77,11 +77,15 @@ require_once('conexion.php');
            </div>
 
  <input type="submit" name="Enviar" value="Enviar">
-
+ <div class="botn">
+  <a href="funcionesadm.php">Regresar</a>
+ </div>
+ 
 
 </fieldset>
+  
  </form>
-<a href="funcionesadm.php" class="btn">REGRESAR</a>
+
 </div>
 </body>
 </html>

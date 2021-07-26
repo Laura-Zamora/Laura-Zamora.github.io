@@ -68,10 +68,12 @@ require_once('conexion.php');
            <i class="icono izquierda fa fa-lock"></i><input type="password" name="clave_abogado" class="password_btn" placeholder="Contraseña asiganda" value="">
          </div>
          <input type="submit" name="Enviar" value="Enviar">
+         <div class="botn">
+            <a href="funcionesadm.php">Regresar</a>
+        </div>
 
        </fieldset>
         </form>
-     <a href="funcionesadm.php" class="btn">REGRESAR</a>
     </div>
   </body>
 </html>
@@ -85,7 +87,7 @@ if(isset($_POST['Enviar'])){
   $exec=$resultado->execute(array(":numd_abogado"=>$documento,":nom_abogado"=>$nombre,":ape_abogado"=>$apelldio,":genero_abogado"=>$genero,":tel_abogado"=>$telefono,":direccion_abogado"=>$direccion,":email_abogado"=>$email,"clave_abogado"=>$clave));
   if($exec){
     echo'<script language="javascript">alert("Datos Registrados");</script>';
-    echo "Datos registrador".$e->getMessage();;
+    echo "Datos registrador".$e->getMessage();
     header("Refresh:0; url=modificar_abogados.php");
   }else{
     echo '<script language="javascript">alert("Error al registrar la informacion");</script>';

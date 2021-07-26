@@ -43,7 +43,7 @@ if (isset($_POST['actualizar'])) {
   $email_abogado=$_POST['email_abogado'];
   $clave_abogado=$_POST['clave_abogado'];
 
-  $SQL = $conn->query("actualizar abogados set nom_abogado = '$nom_abogado', ape_abogado = '$ape_abogado', genero_abogado = '$genero_abogado',
+  $SQL = $conn->query("update abogados set nom_abogado = '$nom_abogado', ape_abogado = '$ape_abogado', genero_abogado = '$genero_abogado',
   tel_abogado = '$tel_abogado', direccion_abogado = '$direccion_abogado', email_abogado = '$email_abogado', clave_abogado = '$clave_abogado'
    WHERE numd_abogado=$numd_abogado");
 

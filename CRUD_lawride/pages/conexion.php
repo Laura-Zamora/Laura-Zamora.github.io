@@ -33,8 +33,6 @@ CREATE TABLE IF NOT EXISTS administrador(
   INDEX(email_administrador)
 );
 
-INSERT INTO administrador(numd_administrador,nom_administrador,ape_administrador,genero_administrador,tel_administrador,direccion_administrador,email_administrador,clave_administrador)
-VALUES('1003826989','Laura Carolina','Zamora Guzman','Femenino','3015550064','ojo de agua','lauza_17@hotmail.com','12345');
 
 CREATE TABLE IF NOT EXISTS abogados(
   numd_abogado VARCHAR(15) NOT NULL PRIMARY KEY,

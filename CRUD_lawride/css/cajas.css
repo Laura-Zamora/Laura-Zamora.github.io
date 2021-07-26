@@ -7,14 +7,15 @@
 
 }
 
-body{
 
+body{
   background-image:url(../img/fondo2.jpg);
-  background-position: center 0px ;                    /* centrado en x y en y posicion 0 */
+  background-position: center 0px ;                    
   background-repeat: no-repeat;
   background-size: cover;
 
 }
+
 
 .caja{
   justify-content: space-between;

@@ -35,10 +35,12 @@
              </ul>
            </div>
           <?php endif; ?>
+
+          <div class="botn">
+            <a href="../index.html">Regresar</a>
+          </div>
           </form>
        </fieldset>
-        
-     <a href="../index.html" class="btn">INICIO</a>
     </div>
   </body>
 </html>
